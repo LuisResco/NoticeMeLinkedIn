@@ -1,0 +1,15 @@
+{
+  "name": "notice-me-linkedin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "noticeMeSenpai.js",
+  "scripts": {
+    "min": "node ./tools/minify.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-minify": "^3.5.0"
+  }
+}
