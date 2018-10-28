@@ -2,6 +2,10 @@
   "name": "notice-me-linkedin",
   "version": "1.0.0",
   "description": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LuisResco/notice-me-linkedIn"
+  },
   "main": "noticeMeSenpai.js",
   "scripts": {
     "min": "node ./tools/minify.js"
