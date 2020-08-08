@@ -6,7 +6,7 @@ class Interactables {
 }
 
 class ButtonsByClass extends Interactables {
-    constructor(name, cssClass) {
+    constructor(name, cssClass, context) {
         super()
         this._name = name;
         this._cssClass = cssClass;
@@ -50,9 +50,13 @@ class Farmer {
         this._callback = callback;
         this._iterationNumber = 0;
 
-        const suggestedConnect = new ButtonsByClass("Suggested connects", "mn-suggester-card__action-btn button-primary-medium", this.context);
-        const invitations = new ButtonsByClass("Invitations", "invitation-card__action-btn button-secondary-medium", this.context);
-        const connects = new ButtonsByClass("Connects", "button-secondary-small", this.context);
+        const suggestedClass = "";
+        const invitationsClass = "invitation-card__action-btn artdeco-button artdeco-button--2 artdeco-button--secondary ember-view";
+        const connectClass = "full-width artdeco-button artdeco-button--2 artdeco-button--full artdeco-button--secondary ember-view";
+
+        const suggestedConnect = new ButtonsByClass("Suggested connects", suggestedClass, this._context);
+        const invitations = new ButtonsByClass("Invitations", invitationsClass, this._context);
+        const connects = new ButtonsByClass("Connects", connectClass, this._context);
         this.PriotityInteractables.push(suggestedConnect);
         this.Interactables.push(invitations);
         this.Interactables.push(connects);

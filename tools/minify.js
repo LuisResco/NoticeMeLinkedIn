@@ -4,6 +4,6 @@ compressor.minify({
     compressor: 'gcc',
     input: './src/index.js',
     output: './dist/noticeMeLinkedIn.js',
-    callback: (err, min) => { }
+    callback: (err, min) => { console.log("Min finished"); }
 });
 
